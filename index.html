@@ -1,56 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Portfolio</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h1>👨‍💻 My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <main class="content">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hello! I'm a passionate developer who loves creating modern web applications. 🚀</p>
-                <img src="https://via.placeholder.com/400" alt="Coding Illustration">
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Project 1</h3>
-                        <p>A web app that does amazing things.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 2</h3>
-                        <p>Another cool project to showcase my skills.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>Contact</h2>
-                <form id="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Your message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-        </main>
-    </div>
-    <script src="scripts.js"></script>
+    <header>
+        <div class="logo">Mi Portafolio</div>
+        <div class="menu-toggle">☰</div>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h1>Sobre Mí</h1>
+        <p>Hola, soy un desarrollador apasionado por crear soluciones modernas y elegantes...</p>
+    </section>
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="project">
+            <img src="proyecto1.png" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto...</p>
+        </div>
+    </section>
+    <footer>
+        <p>Hecho con ❤️ por [Tu Nombre].</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
