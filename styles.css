@@ -1,126 +1,58 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    color: #e4e4e4;
-    background: #0d1117;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+}
+
+header {
+    background-color: #1d1d1d;
+    padding: 15px;
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Container */
-.container {
-    display: flex;
-    width: 100%;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    background: linear-gradient(135deg, #1f2b36, #0d1117);
-    padding: 20px;
-}
-
-.sidebar h1 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.sidebar nav ul {
-    list-style: none;
-}
-
-.sidebar nav ul li {
-    margin: 10px 0;
-}
-
-.sidebar nav ul li a {
-    text-decoration: none;
-    color: #e4e4e4;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.sidebar nav ul li a:hover {
-    color: #58a6ff;
-}
-
-/* Main Content */
-.content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.content p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-.content img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Project Grid */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-/* Contact Form */
-#contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact-form input, #contact-form textarea, #contact-form button {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-
-#contact-form input, #contact-form textarea {
-    background: #161b22;
-    color: #e4e4e4;
-}
-
-#contact-form button {
-    background: #58a6ff;
-    color: white;
+.menu-toggle {
+    font-size: 30px;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
-#contact-form button:hover {
-    background: #1f6feb;
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    background-color: #1e1e1e;
+    height: 100%;
+    transition: left 0.3s ease;
+    padding-top: 60px;
 }
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #58a6ff;
+    text-decoration: none;
+    display: block;
+}
+
+#about, #projects {
+    padding: 50px;
+    margin-left: 250px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+}
+
