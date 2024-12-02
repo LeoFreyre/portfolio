@@ -1,7 +1,3 @@
-document.querySelectorAll('.sidebar nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const target = document.querySelector(event.target.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.sidebar').style.left = document.querySelector('.sidebar').style.left === '0px' ? '-250px' : '0px';
 });
